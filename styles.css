@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color: black;
+}
+
+.map-container {
+    position: relative;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.map-background {
+    height: 100%;
+}
+
+.pin {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.1s;
+    transform: scale(1.2);
+}
+
+.pin img {
+    width: 40px;
+    height: auto;
+}
+
+.pin:hover {
+    transform: scale(1.1);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    position: relative;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 600px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-container {
+    height: 10px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: red;
+    width: 0;
+}
+
+.popup-close {
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-left, .popup-right {
+    flex: 1;
+    color: #fff;
+}
+
+.popup-left {
+    max-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.popup-left img {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}

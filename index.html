@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <div class="map-container">
+        <img src="./media/background map.png" alt="Map Background" class="map-background">
+        <div class="pin" id="pin1" style="bottom: 8%; left: 60%;">
+            <img src="./media/pin.png" alt="Pin 1">
+        </div>
+        <div class="pin" id="pin2" style="bottom: 37%; left: 50%;">
+            <img src="./media/pin.png" alt="Pin 2">
+        </div>
+        <div class="pin" id="pin3" style="top: 40%; right: 15%;">
+            <img src="./media/pin.png" alt="Pin 3">
+        </div>
+        <div class="pin" id="pin4" style="top: 25%; left: 57%;">
+            <img src="./media/pin.png" alt="Pin 4">
+        </div>
+        <div class="pin" id="pin5" style="top: 5%; right: 10%;">
+            <img src="./media/pin.png" alt="Pin 5">
+        </div>
+
+        <div class="pin" id="pin6" style="top: 20%; left: 30%; transform: scale(0.6);">
+            <img src="./media/pin.png" alt="Pin 6">
+        </div>
+    </div>
+    <div id="popup" class="popup hidden" style="transform: scale(1.2);">
+        <div class="popup-content">
+            <div class="progress-container" style="opacity: 0;">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <span id="popup-close" class="popup-close">&times;</span>
+            <div class="popup-left">
+                <img id="popup-image" src="" alt="Popup Image">
+            </div>
+            <div class="popup-right">
+                <h2 id="popup-heading"></h2>
+                <p id="popup-text" style="font-size: 16px;"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
